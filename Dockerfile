@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ADD entrypoint.sh /opt/run.sh
+ADD run.sh /opt/run.sh
 
 RUN apk add --no-cache --virtual .build-deps ca-certificates curl \
  && chmod +x /opt/run.sh
